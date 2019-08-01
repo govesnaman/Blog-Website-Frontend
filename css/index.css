@@ -26,3 +26,36 @@ body{
   margin-top: -50px;
   margin-left: -100px;
 }
+
+input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.sign{
+  margin: 10px 0px;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  width: 100%;
+}
+
+.modal-title {
+    margin: 0 auto;
+ 
+}
+label{
+  margin-top: 5px;
+}
+
+.btnclass{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  }
+
+#nam{
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+}
