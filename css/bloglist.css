@@ -1,14 +1,38 @@
 .post {
     position: relative;
-    width: 90%;
+    width: 45%;
     height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
-    margin: 10px 10px 10px 20px;
+    margin: 2%;
     float:left;
     border-radius: 15px;
+ 
 }
-    
+.post-title{
+    line-height: 1em;
+    height: 1em;
+    font-size: 155%;
+}
+.post-desc{
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 0 !important;
+    height: 4em;
+    line-height: 1em;
+
+}
+ 
+ input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+ .allPostsContainer{
+       display: inline-flex;
+    justify-content: center;
+ }   
 .post-left {
         width: 15%;            
         max-width: 15%;
@@ -17,23 +41,25 @@
         text-align: center;
         font-weight: bold;
         color: #000;
+
 }
 .post-content {
-        width: 75%;           
+        width: 100%;           
         display: table-cell;
+        margin: 10px;
         text-align: left;
         background-color: #E8E8E8;
         color: #000000;
         border-radius: 0 15px 15px 0;
-        padding: 0 20px;      
+        padding: 0 20px;
+
 }
 .post-title{
     font-family: 'Itim', cursive;
-    font-weight: bold;
-    color: #2b312b;
-    font-size: 25px;
-    height: 25px;
-    }
+/*    font-weight: bold;
+*/    color: #2b312b;
+/*    height: 25px;
+*/    }
 .post-more {
     float: right;
     cursor: pointer;
@@ -42,23 +68,118 @@
     padding-right: 0 !important;
     padding-bottom: 10px;
     font-size: 30px;
+
 }
-.post-desc{
+/*.post-desc{
     height: 100px;
     margin-bottom: 0 !important;
-}
+  width: 100%; 
+  overflow : hidden;
+  text-overflow: ellipsis;
 
-body {
+ 
+}*/
+
+.bdy {
     height: 100%;
     width: 100%;
     position: relative;
     margin: 0 !important;
-    color: #fff;
     background-color: orange;
     background-size: 2000% 2000%;
+    line-height: inherit;
+
 }
 .allPostsContainer {
     height: 100%;
     width: 100%;
 
 }
+
+.midButtons{
+    background-color: orange;
+    color: white;
+    padding: 8px 15px;
+    
+}
+
+.postButtons{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.sign{
+  margin: 10px 0px;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  width: 100%;
+}
+
+.modal-title {
+    margin: 0 auto;
+ 
+}
+label{
+  margin-top: 5px;
+}
+
+.btnclass{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  }
+
+#nam{
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+}
+
+i{
+    float: right;
+    margin: 7px;
+    font-size: xx-large;
+   
+}
+
+.option{
+   margin: 5px 30px;
+    padding: 5px 35px;
+    border: 0px;
+
+
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    }
+
+#y{
+    background-color: red;
+    color: white;
+}
+
+#n{
+    background-color: green;
+    color: white;
+}
+
+.modal-body1{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+body{
+    min-width: 600px;
+    height: auto;
+    }
