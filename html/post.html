@@ -3,24 +3,93 @@
         
         <link href='..\css\post.css' rel='stylesheet' type='text/css'>
         <link href='..\css\header.css' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
         <link href='..\css\font.css' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+     	
     <style>        
     </style>     
 </head>
 <body>
-        <div class="header">
-             <!-- Insert code for Sign Up, Sign In button here. 
-               Add code for "ScriBBler" heading and the sub-heading -->
+        
+
+<div class="header">
+  <!-- Insert code for Sign Up, Sign In button here. 
+                 Add code for "ScriBBler" heading and the sub-heading -->
+  <button class="topButtons" type="button" data-toggle="modal" data-target="#modalsignup">Sign Up</button>
+  <button class="topButtons" type="button" data-toggle="modal" data-target="#modalsignin">Sign In</button>
+  <a id="pageTitle" class="logo-title">ScriBBler</a><br>
+  <p class="middleText">Explore. Imagine. Create</p>
+  <div>
+    <!-- Insert code for Sign In modal here -->
+    <div class="modal" id="modalsignin">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    	    <div class="head">
+            <div class="modal-header">
+              <h5 class="modal-title">Welcome Back!</h5>
+            </div>
+            <div class="btnclass">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <form>
+              <label>Username</label><br>
+              <input type="text" name="username" placeholder="Enter Username" required><br>
+              <label>Password</label><br>
+              <input type="password" name="password" placeholder="Enter Password" required><br>
+              <button type="submit" class="sign">Sign In</button>
+            </form>
+     		    <p id='nam'>Not a member?<a href="#" data-toggle="modal" data-target="#modalsignup"> Sign Up</a></p>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="modal" id="modalsignup">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="head">
+            <div class="modal-header">
+              <h5 class="modal-title">Get Started</h5>
+            </div>
+            <div class="btnclass">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        
+      <div class="modal-body">
+      	<form>
+          <label>Full Name</label><br>
+          <input type="text" name="name" placeholder="Enter Full Name" required><br>
+          <label>Username</label><br>
+          <input type="text" name="username" placeholder="Enter Username" required><br>
+          <label>Password</label><br>
+          <input type="password" name="password" placeholder="Enter Password" required><br>
+          <label>Confirm Password</label><br>
+          <input type="password" name="confirmpass" placeholder="Confirm Password" required><br>
+          <button type="submit" class="sign">Sign Up</button>
+        </form>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     <div class="blogContent">
         <div id="blogTitle" class="blogTite">
         <h id="blogTitleNew">The legacy of Jimi Hendrix</h>
     </div>
-
+</div>
 <div class="blogAuthor">
 
     <!-- Insert code for Edit/Save button and  -->
@@ -28,7 +97,7 @@
     <p>Jimi</p>
     </div>
     <div class = "edit-btn">
- <button id = "btn" onclick="edit()">Edit  <i class="fa fa-pencil-square-o"></i>
+ <button class = "btns" onclick="edit()">Edit  <i class="fa fa-pencil-square-o"></i>
 </button></div>
 
 
@@ -39,12 +108,25 @@
 </div>
 
     <!-- Insert code for Like button, Comment button, Comment box here-->
+     <div class="likeBlogButton">    
+    <button  id= "likeBlog" class= "btns" onclick="postLiked()"><i class="fa fa-thumbs-up"> Like</i></button> 
+    <span id="commentCount">Be the first one to like this!</span>
+  </div>
+    <textarea placeholder="Leave a comment..." id="userComments"></textarea> 
+    <button class = "btns" onclick="addComments(userComments)">Comment</button>
+    <h6 class = "comments">All Comments</h6>
+    <div id="commentsSaved">
+    
+    </div>
 
-    <script src="..\js\post.js" defer></script>
-    <script src="..\js\header.js">             
-    </script>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+
+    <script src="..\js\post.js">  </script>
+    <script src="..\js\header.js"> </script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
 </body>
+	
+</html>

@@ -19,3 +19,24 @@ function save(){
   	document.getElementById("btn").setAttribute("onclick","edit()");
 }
 
+function addComments(comment){
+        var addEventName = comment.value +'<br>';
+       
+        var a = document.getElementById('userComments');
+        document.getElementById('commentsSaved').innerHTML += '<p class = "paraText">'+addEventName+'</p>';          
+        a.value=a.defaultValue;
+    }
+var numberOfClicks=0;
+function postLiked(){
+        document.getElementById("likeBlog").innerHTML = "<i class='fa fa-thumbs-up'></i> Liked!";
+        document.getElementById("likeBlog").setAttribute("class","btns")
+        numberOfClicks += 1;
+        if(numberOfClicks!=0){
+            if (numberOfClicks==1){
+                document.getElementById('commentCount').innerHTML = numberOfClicks + " person likes this!";
+            }
+            else {
+                document.getElementById('commentCount').innerHTML = numberOfClicks + " people have liked this!";
+            }
+            }
+        }

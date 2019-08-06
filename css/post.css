@@ -1,3 +1,59 @@
+ input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.midButtons{
+    background-color: orange;
+    color: white;
+    padding: 8px 15px;
+    
+}
+
+.postButtons{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.sign{
+  margin: 10px 0px;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  width: 100%;
+}
+
+.modal-title {
+    margin: 0 auto;
+ 
+}
+label{
+  margin-top: 5px;
+}
+
+.btnclass{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  }
+
+#nam{
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+}
+
+
+
 .blogTite {
     font-size: 150%;
     font-family: 'Abel', sans-serif;
@@ -7,12 +63,13 @@
 }
 .blogText {
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     margin: 20px;
+     margin: 10px 50px;
      }
 .blogAuthor {
     padding: 0px 0px 0px 10px;
     font-family: 'Niconne', cursive;
     font-size: 30px;
+    margin: 10px 50px;
 
 }
 .blogContent{
@@ -22,14 +79,16 @@
 .edit-btn{
 	display: flex;
 	justify-content: flex-end;
+	margin: 10px 50px;
 }
 
-#btn{
+.btns{
 	background-color: red;
 	color: white;
 	border: 0px;
 	box-shadow:-1px 3px 7px red;
 	padding: 6px 12px;
+	margin: 10px 10px 10px 50px; 
 
 }
 
@@ -38,3 +97,38 @@
 }
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+#comments{  
+ width: 30%;
+ margin: 10px 50px;
+background-color: grey;
+
+ }
+
+
+#userComments{
+    padding: 10px;
+    width: 55%;
+    display: block;
+    margin: 10px 50px;
+}
+
+.comments{
+	margin: 10px 50px;
+	font-family: TimesNewRoman;
+	font-weight: bolder; 
+	background-color: grey
+	padding: 15px;
+}
+#commentsSaved{
+	margin: 0px 50px; 
+	background-color: grey;
+	padding: 15px;
+	width: 55%
+}
+
+.paraText{
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
