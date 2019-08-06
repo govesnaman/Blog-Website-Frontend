@@ -12,20 +12,6 @@ body{
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
                                  
-.midButtons{
-	background-color: orange;
-	color: white;
-	padding: 8px 15px;
-	
-}
-
-.postButtons{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
-}
 
 input{
   width: 100%;
