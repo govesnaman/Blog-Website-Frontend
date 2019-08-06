@@ -1,142 +1,129 @@
 <!DOCTYPE html>
 <html>
-<head>
-
+  <head>
+    <title>Blog Home Page</title>
     <!-- Place all CSS for header in this file -->
     <link href='css\header.css' rel='stylesheet' type='text/css'>
-
     <!-- Place all CSS for the rest of the elements in this file -->
     <link href='css\index.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-
-	<!-- Place all CSS for fonts in this file -->
+    <!-- Place all CSS for fonts in this file -->
     <link href='css\font.css' rel='stylesheet' type='text/css'>
-
-</head>
-<body>
+  </head>
+  <body>
     <div id="main-container-div">
-
-        <div class="header">
-
-        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-
-            <button class="topButtons" type="button" data-toggle="modal" data-target="#modalsignup">Sign Up</button>
-            <button class="topButtons" type="button" data-toggle="modal" data-target="#modalsignin">Sign In</button>
-            <a id="pageTitle" class="logo-title">ScriBBler</a><br>
-            <p class="middleText">Explore. Imagine. Create</p>
-        </div>
+      <div class="header">
+        <!-- Code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+        <button class="topButtons" type="button" data-toggle="modal" data-target="#modalsignup" data-backdrop="static" data-keyboard="false">Sign Up</button>
+        <button class="topButtons" type="button" data-toggle="modal" data-target="#modalsignin" data-backdrop="static" data-keyboard="false">Sign In</button>
+        <a id="pageTitle" class="logo-title">ScriBBler</a><br>
+        <p class="tagLine">Explore. Imagine. Create</p>
+      </div>
            
-        <div class="postButtons">
-
-        	<!-- Insert code for All Posts & Create Post button here -->
-        	<button class="midButtons" type="button" onclick="location.href = 'html/bloglist.html'">All Posts</button>
-        	<button class="midButtons" type="button" data-toggle="modal" data-target="#createpost">Create Post</button>
-
+      <div class="postButtons">
+        <!-- Insert code for All Posts & Create Post button here -->
+        <button class="midButtons" type="button" onclick="location.href = 'html/bloglist.html'">All Posts</button>
+        <button class="midButtons" type="button" data-toggle="modal" data-target="#createpost">Create Post</button>
+      </div>
+    </div>
+    <!-- Code for Sign In modal here -->
+    <!-- The Modal -->
+    <div>
+      <!-- Modal -->
+      <div class="modal" id="modalsignin">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="head">
+              <div class="modal-header">
+                <h5 class="modal-title">Welcome Back!</h5>
+              </div>
+              <div class="btnclass">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+            <div class="modal-body">
+              <form>
+                <label>Username</label><br>
+                <input type="text" name="username" placeholder="Enter Username" required><br>
+                <label>Password</label><br>
+                <input type="password" name="password" placeholder="Enter Password" required><br>
+                <button type="submit" class="sign">Sign In</button>
+              </form>
+              <p id='not-a-member'>Not a member?<a href="#" data-toggle="modal" data-target="#modalsignup" data-dismiss="modal"> Sign Up</a></p>
+            </div>
+          </div>
         </div>
-    </div>
-
-   
-    	<!-- Insert code for Sign In modal here -->
-    	<!-- The Modal -->
-<div>
-<!-- Modal -->
-<div class="modal" id="modalsignin">
-  <div class="modal-dialog">
-    <div class="modal-content">
-    	<div class="head">
-      <div class="modal-header">
-        <h5 class="modal-title">Welcome Back!</h5>
-    </div>
-    <div class="btnclass">
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
-  </div>
-
-      <div class="modal-body">
-      	<form>
-       <label>Username</label><br>
-        <input type="text" name="username" placeholder="Enter Username" required><br>
-        <label>Password</label><br>
-        <input type="password" name="password" placeholder="Enter Password" required><br>
-        <button type="submit" class="sign">Sign In</button>
-    </form>
- 		<p id='nam'>Not a member?<a href="#" data-toggle="modal" data-target="#modalsignup"> Sign Up</a></p>
-      </div>
-
-      
     </div>
-  </div>
-</div>
-</div>
-
-
-
     <div>
-    	<div class="modal" id="modalsignup">
-  <div class="modal-dialog">
-    <div class="modal-content">
-     <div class="head">
-      <div class="modal-header">
-        <h5 class="modal-title">Get Started</h5>
-    </div>
-    <div class="btnclass">
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <!-- Code for signup modal -->
+      <div class="modal" id="modalsignup">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="head">
+              <div class="modal-header">
+                <h5 class="modal-title">Get Started</h5>
+              </div>
+              <div class="btnclass">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+            <div class="modal-body">
+              <form>
+                <label>Full Name</label><br>
+                <input type="text" name="name" placeholder="Enter Full Name" required><br>
+                <label>Username</label><br>
+                <input type="text" name="username" placeholder="Enter Username" required><br>
+                <label>Password</label><br>
+                <input type="password" name="password" placeholder="Enter Password" required><br>
+                <label>Confirm Password</label><br>
+                <input type="password" name="confirmpass" placeholder="Confirm Password" required><br>
+                <button type="submit" class="sign">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-      <div class="modal-body">
-      	<form>
-        <label>Full Name</label><br>
-        <input type="text" name="name" placeholder="Enter Full Name" required><br>
-        <label>Username</label><br>
-        <input type="text" name="username" placeholder="Enter Username" required><br>
-        <label>Password</label><br>
-        <input type="password" name="password" placeholder="Enter Password" required><br>
-        <label>Confirm Password</label><br>
-        <input type="password" name="confirmpass" placeholder="Confirm Password" required><br>
-        <button type="submit" class="sign">Sign Up</button>
-    </form>
-      </div>
-      
     </div>
-  </div>
-</div>
-    	
-    </div>
-
     <div>
-    	<div class="modal" id="createpost">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <!-- Create post modal -->
+      <div class="modal" id="createpost">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="head">
+              <div class="modal-header">
+                <h5 class="modal-title">New Post</h5>
+              </div>
+              <div class="btnclass">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+            <div class="modal-body">
+              <form>
+                <label>Blog Title</label><br>
+                <input type="text" placeholder="Enter Post Title" required><br>
+                <label>Blog Content</label><br>
+                <textarea placeholder="Enter Post Content" id = "textarea" required></textarea>
+                <button type="submit" class="sign">Create Post</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
     </div> 
 
-	<!-- Place all Javascript for header in this file -->
-	<script src="js\header.js"></script>
-	<!-- Place all Javascript for rest of the elements in this file -->
-	
+	  <!-- Place all Javascript for header in this file -->
+	  <script src="js\header.js"></script>
+	  <!-- Place all Javascript for rest of the elements in this file -->
     <script src="js\index.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>

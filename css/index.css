@@ -1,47 +1,65 @@
-body{
-   background: url('background.jpg');
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center center;
-   background-size: cover;
-   margin: 0 !important;
-   background-size: 100% cover!important;
-   overflow:hidden;
-   display: block;
+body {
+  background: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  margin: 0 !important;
+  background-size: 100% cover!important;
+  overflow:hidden;
+  display: block;
 } 
+                             
+.midButtons {
+  background-color: orange;
+  border: 0px;
+  padding: 8px 15px;
+  font-weight: bold;    
+}
 
-/* Set a style for the rest of the elements besides the header elements on the index.html page */
-                                 
+.postButtons {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
 
-input{
+input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
 }
-.sign{
+
+.sign {
   margin: 10px 0px;
   background-color: green;
   color: white;
   padding: 5px;
   width: 100%;
+  border: 0px;
 }
 
-.modal-title {
-    margin: 0 auto;
- 
+.modal-title  {
+  margin: 0 auto; 
 }
-label{
+
+label {
   margin-top: 5px;
 }
 
-.btnclass{
+.btnclass {
   position: absolute;
   top: 15px;
   right: 15px;
-  }
+}
 
-#nam{
-      display: flex;
-      justify-content: center;
-      margin: 10px;
+#not-a-member {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#textarea {
+  width: 100%;
 }
