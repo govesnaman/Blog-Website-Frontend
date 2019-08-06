@@ -121,7 +121,7 @@ background-color: grey;
 }
 #commentsSaved{
 	margin: 0px 50px; 
-	background-color: grey;
+	background-color: lightgrey;
 	padding: 15px;
 	width: 55%
 }
@@ -129,6 +129,6 @@ background-color: grey;
 .paraText{
     background-color: white;
     color: black;
-    padding: 5px;
+    padding: 12px 10px;
 }
 
