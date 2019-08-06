@@ -28,6 +28,7 @@ input {
   margin: 10px 0px;
   background-color: green;
   color: white;
+  border: 0px;
   padding: 5px;
   width: 100%;
 }
@@ -95,17 +96,11 @@ label {
 	border: 1px solid pink;
 }
 
-#comments {  
-  width: 30%;
-  margin: 10px 50px;
-  background-color: grey;
-}
-
 #userComments {
   padding: 10px;
   width: 55%;
   display: block;
-  margin: 10px 50px;
+  margin: 30px 50px 10px 50px;
 }
 
 .comments {
