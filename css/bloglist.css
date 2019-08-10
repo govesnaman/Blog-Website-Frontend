@@ -1,4 +1,5 @@
-
+/*In the post class, we have fixed the width to be 45% of the view port as we want only 2 
+posts in a single row*/
 .post {
 	position: relative;
 	width: 45%;
