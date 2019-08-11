@@ -21,3 +21,9 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     font-size: 13px;
     margin-left: 10px;
 }
+/*Font for modal title*/
+.modal-title{
+	font-family: abel;
+	font-weight: bolder;
+	font-size: 1.5em;
+}
